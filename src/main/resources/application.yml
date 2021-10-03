@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: configserver
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mainguyen18/CloudConfigServer
+          default-label: master
+        bootstrap: false
